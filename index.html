@@ -40,12 +40,61 @@
 			<h2>Overview</h2>
       
 			<h3 id="principles">Design Patterns and Principles</h3>
+      <p> The design patterns that I used were mostly the use of the same colour palettes throught all pages as well as a consistent header and footer placement and theme. </p>
+
+      <p> The design principles I focused on were some that I found from a design checklist by Franks Spillers ("What are Design Principles?", n.d.), talking about 5 main principles of good UX design: </p>
+			
+      <h4>Consistent Controls</h4>
+      <p> With a shared header and footer that contained their elements in the same spot on each page, I felt as though the controls to navigate the pages in my website were consistent. </p>
+
+      <h4> Proximity </h4>
+      <p> One of the main ways I ensured the proximity and grouping of similar items was by using the grid. As can be seen in the below example (figure 1), the events are grouped away from the title card, with each type of event being further grouped with itself. </p>
+
+      <figure>
+				<img src="images/proximity.jpg"/>
+        <figcaption>Figure 1: Seperation of elements by proximity</figcaption>
+      </figure>
       
+      <h4> Visual Hierarchy </h4>
+      <p> Visual hierarchy is especially important on mobile, and is shown in my website through the larger icons followed by smaller text. This was chosen as 90% of information transmitted to the brain is visual, and visuals are processed in the brain at 60,000 times the speed of text (Simpleshow, 2018), meaning that the user will most likely be choosing which event to attend primarily by the image provided. Another big element of visual hierarchy on my website is the use of large, differently coloured buttons in my donation/volunteering page (figure 2), drawing the users attention to the call to action. Visual hierarchy was also shown through smaller details, such as the use of differently sized headers and text.</p>
+
+      <figure>
+				<img src="images/visual-h.jpg"/>
+        <figcaption>Figure 2: Large buttons draw user attention.</figcaption>
+      </figure>
+
+      <h4> Color Contrast </h4>
+      <p> By checking the text and font colour in a colour contrast checker, it was found that there were no issues (see figure 3), with only the active header not passing WCAG AAA for normal font, which was not an issue as it is in large text and is used to show which element should not be clicked as it is already active. </p> 
+
+      <figure>
+				<img src="images/color-contrast.jpg"/>
+        <figcaption>Figure 3: All background colours and their text colour.</figcaption>
+      </figure>
+
+      <h4> Intuitive Icons </h4>
+      <p> My intuitive icons were the hamburger menu for mobile and the buttons with text on my donate/volunteer page (can be seen in figure 2). </p> 
       
 			<h3 id="accessability">Implemented Accessability</h3>
+      <p> The main way I tested accessability was by using the WAVE (Web Accessability Evaluation Tool) extension on chrome. When using WAVE on my Home page (see figure 4), donating/volunteering page (see figure 5) and Contact & FAQ page (see figure 6), the only error that was found was an empty link, which was unavoidable due to the empty link being a spot for the hamburger menu to show up when a mobile device is being used. There were no contrast errors of any of the pages, and the only alert on my volunteering/donating and Contact & FAQ pages were due to no h1 being used - which is a purposeful decision as these two pages do not have a singular most important heading, and thus have two h2 elements instead. All alerts on the Home page were due to links all leading to eventbrite in place of their intended/hypothetical evenbrite event. </p>
+
+      <figure>
+				<img src="images/wave-index.jpg"/>
+        <figcaption>Figure 4: WAVE evaluation of Home Page.</figcaption>
+      </figure>
+
+      <figure>
+				<img src="images/wave-donate.jpg"/>
+        <figcaption>Figure 5: WAVE evaluation of Donating/Volunteering Page.</figcaption>
+      </figure>
+
+      <figure>
+				<img src="images/wave-contact.jpg"/>
+        <figcaption>Figure 6: WAVE evaluation of Contact & FAQ Page.</figcaption>
+      </figure>
 
       <h3 id="layout">Layout</h3>
       <!--talk about having multiple css sheets here -->
+      <p> Creating the layout for my website was achieved using grids. For the web prototype, I have different css sheets for each page along with a common page which contains elements that are shared between all of the pages. Having multiple style sheets was done as the layout for each page in the website was different enough to warrent its own grid container, leading to complications when using a single style sheet. By having multiple sheets and a common sheet, I am able to find and update the commom elements as well as elements pertaining to a specific page quickly and efficiently, moreso than if I had culminated it all into one style sheet. </p>  
 			
 		</section>
 
